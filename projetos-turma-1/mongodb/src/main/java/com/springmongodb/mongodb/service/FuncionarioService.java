@@ -11,4 +11,6 @@ public interface FuncionarioService {
 	public Funcionario obterPorCod(String cod);
 	
 	public Funcionario criar(Funcionario medico);
+
+	void criarGestor(Funcionario funcionario);
 }

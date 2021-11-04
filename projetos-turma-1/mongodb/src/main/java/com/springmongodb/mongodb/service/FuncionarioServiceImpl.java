@@ -39,6 +39,11 @@ public class FuncionarioServiceImpl implements FuncionarioService {
 		
 		return this.funcionarioRepository.save(funcionario);
 	}
+
+	@Override
+	public void criarGestor(Funcionario funcionario){
+		this.funcionarioRepository.save(funcionario);
+	}
 	
 	
 }

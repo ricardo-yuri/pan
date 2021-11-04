@@ -36,5 +36,11 @@ public class FuncionarioController {
 	public Funcionario criar(@RequestBody Funcionario funcionario) {
 		return this.funcionarioService.criar(funcionario);
 	}
+
+	@PostMapping(value = "/gestor")
+	public ResponseEntity<Funcionario> criarGestor(@RequestBody Funcionario funcionario) {
+		this.funcionarioService.criarGestor(funcionario);
+		ResponseEntity.ok().body(obj);
+	}
 	
 }
