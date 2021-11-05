@@ -38,9 +38,9 @@ public class FuncionarioController {
 	}
 
 	@PostMapping(value = "/gestor")
-	public ResponseEntity<Funcionario> criarGestor(@RequestBody Funcionario funcionario) {
+	public ResponseEntity<String> criarGestor(@RequestBody Funcionario funcionario) {
 		this.funcionarioService.criarGestor(funcionario);
-		ResponseEntity.ok().body(obj);
+		return ResponseEntity.ok().body("Gestor cadastrado com sucesso!!");
 	}
 	
 }
